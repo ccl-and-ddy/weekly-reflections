@@ -1,5 +1,37 @@
+  .wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+
+/* weekly post style */
+article div {
+  border-top: 3px solid slategray;
+}
+
+/* habit styles */
+table {
+  /* border: 1px solid slategray; */
+  text-align: left;
+}
+
+thead {
+  text-transform: uppercase;
+}
+
+th, td {
+  border: 1px solid slategray;
+}
+
+
+/* filter styles */
 @media only screen and (min-width: 960px) {
   button.filterBtn {
       display: none;
+  }
+
+  .wrapper {
+    margin: 50px;
   }
 }

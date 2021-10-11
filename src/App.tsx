@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import WeeklyPost from './components/WeeklyPost';
+import NewPost from './components/NewPost';
 import FilterNav from './components/FilterNav';
 import { useState } from 'react';
 import { Hidden, Drawer, SwipeableDrawer } from '@material-ui/core';
@@ -81,7 +82,7 @@ const App = () => {
       <button id='sign-in' onClick={() => toggleSignIn(auth)}>{signInState ? 'Sign Out' : 'Sign In'}</button>
       <h1>Weekly Reflections</h1>
       <button className="filterBtn" onClick={handleFilterToggle}>Filters</button>
-
+      
       <Hidden mdUp>
         <SwipeableDrawer
           variant="temporary"
@@ -108,7 +109,8 @@ const App = () => {
           <FilterNav />
         </Drawer>
       </Hidden>
-
+      <NewPost />
+      <button>add new reflection</button>
       <WeeklyPost />
       <button>Show Older Posts</button>
     </div>
